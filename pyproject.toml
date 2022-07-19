@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "Codejam"
+name = "codejam"
 version = "0.1.0"
 description = ""
 
