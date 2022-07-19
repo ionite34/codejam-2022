@@ -1,8 +1,12 @@
 [tool.poetry]
-name = "Name"
+name = "Codejam"
 version = "0.1.0"
 description = ""
-authors = ["Author 1 <email@mail.com>"]
+
+authors = [
+    "ionite34 <dev@ionite.io>",
+]
+
 license = "MIT"
 
 [tool.poetry.dependencies]
