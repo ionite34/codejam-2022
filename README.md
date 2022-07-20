@@ -4,7 +4,10 @@
 [![codecov](https://codecov.io/gh/ionite34/codejam-2022/branch/main/graph/badge.svg)](https://codecov.io/gh/ionite34/codejam-2022)
 
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/ionite34/codejam-2022/main.svg)](https://results.pre-commit.ci/latest/github/ionite34/codejam-2022/main)
+[![FOSSA Status](https://app.fossa.com/api/projects/custom%2B31224%2Fgithub.com%2Fionite34%2Fcodejam-2022.svg?type=shield)](https://app.fossa.com/projects/custom%2B31224%2Fgithub.com%2Fionite34%2Fcodejam-2022?ref=badge_shield)
 
 
 ## License
 The code in this project is released under the [MIT License](LICENSE).
+
+[![FOSSA Status](https://app.fossa.com/api/projects/custom%2B31224%2Fgithub.com%2Fionite34%2Fcodejam-2022.svg?type=large)](https://app.fossa.com/projects/custom%2B31224%2Fgithub.com%2Fionite34%2Fcodejam-2022?ref=badge_large)
