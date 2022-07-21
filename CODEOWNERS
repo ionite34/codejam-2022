@@ -1,0 +1,6 @@
+# Code ownerships for PR reviews
+
+# Continuous integration and deployment checks
+.pre-commit-config.yaml  @ionite34
+.github/*.yml  @ionite34
+.github/workflows/*.yml  @ionite34
