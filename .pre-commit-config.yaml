@@ -12,8 +12,8 @@ repos:
       - id: check-yaml
       - id: end-of-file-fixer
       - id: trailing-whitespace
-      - id: debug-statements
         args: [--markdown-linebreak-ext=md]
+      - id: debug-statements
 
   # Sort imports with isort
   - repo: https://github.com/PyCQA/isort
