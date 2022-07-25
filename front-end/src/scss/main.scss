@@ -2,3 +2,57 @@ $color_theme: blue;
 p {
     color: color_theme;
 }
+
+$theme_black: #001219;
+$theme_beige: #e9d8a6;
+
+body,
+html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: $theme_black;
+    color: $theme_beige;
+}
+
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+// child divs
+.main {
+    flex: 4;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 3rem 0 3rem;
+}
+.left, .right {
+    flex: 1;
+    height: 100%;
+}
+// .messages {
+//     display: flex;
+//     -webkit-flex-direction: column-reverse;
+//     flex-direction: column-reverse;
+//     float: right;
+// }
+.message {
+    padding: 0 0 1rem 1rem;
+}
+.text-box {
+    input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.5rem;
+    }
+    margin-bottom: 3rem;
+}
+
+.message-heading {
+    font-size: larger;
+}
+
+// https://coolors.co/palette/001219-005f73-0a9396-94d2bd-e9d8a6-ee9b00-ca6702-bb3e03-ae2012-9b2226

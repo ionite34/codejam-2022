@@ -2,4 +2,48 @@ p {
   color: color_theme;
 }
 
+body,
+html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #001219;
+  color: #e9d8a6;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.main {
+  flex: 4;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0 3rem 0 3rem;
+}
+
+.left, .right {
+  flex: 1;
+  height: 100%;
+}
+
+.message {
+  padding: 0 0 1rem 1rem;
+}
+
+.text-box {
+  margin-bottom: 3rem;
+}
+.text-box input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.message-heading {
+  font-size: larger;
+}
+
 /*# sourceMappingURL=main.css.map */
