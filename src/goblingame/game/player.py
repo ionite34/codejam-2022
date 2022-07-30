@@ -8,4 +8,7 @@ class Player:
 
     uid: int
     name: str
+    # Inventory of item_name: quantity
     inventory: dict
+    # State flags
+    states: dict
