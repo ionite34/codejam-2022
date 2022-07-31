@@ -1,7 +1,13 @@
 // empty
 
 /* Web Socket */
-
+let socket = new WebSocket("ws://localhost:5500/ws");
+socket.onopen = (event) => {
+    alert("[Connection Established]");
+};
+socket.onmessage = (event) => {
+    alert(`[Received] ${event.data}`);
+};
 
 /* Input Button */
 let text_input = document.getElementById("user-message");
@@ -14,6 +20,7 @@ text_input.addEventListener("keyup", function(event) {
 function InputEnter() {
     console.log(text_input.value);
     CreateMessage("user", text_input.value);
+    socket.send(text_input.value);
     text_input.value = "";
 }
 
