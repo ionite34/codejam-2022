@@ -6,6 +6,10 @@ body, html {
   color: #e9d8a6;
 }
 
+p {
+  font-family: monospace;
+}
+
 .container {
   display: flex;
   height: 100%;
@@ -43,6 +47,7 @@ body, html {
 }
 .message .message-heading {
   color: #EE9B00;
+  font-size: larger;
 }
 .message .message-content {
   color: #e9d8a6;
@@ -58,10 +63,6 @@ body, html {
   box-sizing: border-box;
   width: 100%;
   padding: 0.5rem;
-}
-
-.message-heading {
-  font-size: larger;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -17,6 +17,10 @@ body, html {
     color: $theme_beige;
 }
 
+p {
+    font-family: monospace;
+}
+
 .container {
     display: flex;
     height: 100%;
@@ -61,6 +65,7 @@ body, html {
 
     .message-heading {
         color: $theme_yellow;
+        font-size: larger;
     }
 
     .message-content {
@@ -80,9 +85,4 @@ body, html {
         padding: 0.5rem;
     }
 }
-
-.message-heading {
-    font-size: larger;
-}
-
 
