@@ -1,0 +1,87 @@
+
+// Color Theme
+// https://coolors.co/palette/001219-005f73-0a9396-94d2bd-e9d8a6-ee9b00-ca6702-bb3e03-ae2012-9b2226
+$theme_black: #001219;
+$theme_beige: #e9d8a6;
+$theme_darkred: #9B2226;
+$theme_red: #AE2012;
+$theme_bloodorange: #BB3E03;
+$theme_orange: #CA6702;
+$theme_yellow: #EE9B00;
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: $theme_black;
+    color: $theme_beige;
+}
+
+p {
+    font-family: monospace;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.main {
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0 3rem 0 3rem;
+}
+
+.left, .right {
+    flex: 1;
+    height: 100%;
+}
+
+.left {
+    background-color: #001015;
+    border-right: 1px solid $theme_bloodorange;
+}
+
+.right {
+    background-color: #001015;
+    border-left: 1px solid $theme_bloodorange;
+}
+
+// .messages {
+//     display: flex;
+//     -webkit-flex-direction: column-reverse;
+//     flex-direction: column-reverse;
+//     float: right;
+// }
+
+.messages {
+    padding: 0 2em;
+}
+
+.message {
+    margin-bottom: 1em;
+
+    .message-heading {
+        color: $theme_yellow;
+        font-size: larger;
+    }
+
+    .message-content {
+        color: $theme_beige;
+    }
+}
+
+.text-box {
+    padding: 0 1em;
+    margin-top: 1em;
+    margin-bottom: 3em;
+    padding: 0 2em;
+
+    input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0.5rem;
+    }
+}
