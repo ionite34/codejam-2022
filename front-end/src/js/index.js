@@ -27,7 +27,7 @@ function InputEnter() {
 function CreateMessage(from, content) {
     let messages = document.getElementsByClassName("messages")[0];
     if (from == "user") {
-        messages.innerHTML += 
+        messages.innerHTML +=
             "<div class=\"message\"> \
                 <p class=\"message-content\">" + content + "</p> \
             </div>";
