@@ -25,7 +25,7 @@
         function sendMessage(event) {
             let input = document.getElementById("messageText")
             send_data = {
-                "source": "u"+user_id, // u - user, s = server
+                "source": user_id,
                 "type": "message",
                 "content": input
             }
