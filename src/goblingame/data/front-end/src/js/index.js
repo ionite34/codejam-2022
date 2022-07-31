@@ -1,12 +1,20 @@
 // empty
 
 /* Web Socket */
-let socket = new WebSocket("ws://localhost:5500/ws");
+let socket = new WebSocket("ws://localhost:8000/ws");
 socket.onopen = (event) => {
     alert("[Connection Established]");
 };
 socket.onmessage = (event) => {
-    alert(`[Received] ${event.data}`);
+    if (event.data == "connected") return;
+    console.log(event.data);
+    let event_data = JSON.parse(event.data);
+    console.log(event_data);
+    if (event_data.source != "s") return;
+    
+    if (event_data.type == "ws_setup") {
+        window.uuid = event_data.content;
+    }
 };
 
 /* Input Button */

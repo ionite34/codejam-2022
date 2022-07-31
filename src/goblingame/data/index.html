@@ -15,15 +15,21 @@
     <script>
         let ws = new WebSocket("ws://localhost:8000/ws");
         ws.onmessage = function(event) {
+            let event_data = JSON.parse(event.data);
             let messages = document.getElementById('messages')
             let message = document.createElement('li')
-            let content = document.createTextNode(event.data)
+            let content = document.createTextNode(event_data)
             message.appendChild(content)
             messages.appendChild(message)
         };
         function sendMessage(event) {
             let input = document.getElementById("messageText")
-            ws.send(input.value)
+            send_data = {
+                "source": "u"+user_id, // u - user, s = server
+                "type": "message",
+                "content": input
+            }
+            ws.send(JSON.stringify(send_data))
             input.value = ''
             event.preventDefault()
         }
