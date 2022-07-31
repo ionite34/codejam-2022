@@ -1,5 +1,5 @@
 # Player Model for text game
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 
 @dataclass
@@ -9,6 +9,6 @@ class Player:
     uid: int
     name: str
     # Inventory of item_name: quantity
-    inventory: dict
+    inventory: dict = field(default_factory=dict)
     # State flags
-    states: dict
+    states: dict = field(default_factory=dict)
